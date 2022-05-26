@@ -1,2 +1,13 @@
-# c2-recipe-app-api-2
-Course code for: Build a Backend REST API with Python &amp; Django - Advanced: Take the course here: https://londonapp.dev/c2
+docker build .
+
+docker-compose build
+
+docker-compose run --rm app sh -c "django-admin startproject app ."
+
+docker-compose run --rm app sh -c "django-admin startapp [app_name]"
+
+docker-compose run --rm app sh -c "python manage.py test"
+
+docker-compose run --rm app sh -c "flake8"
+
+docker-compose run --rm app sh -c "python manage.py test && flake8"
