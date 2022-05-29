@@ -4,7 +4,7 @@ docker-compose build
 
 docker-compose run --rm app sh -c "django-admin startproject app ."
 
-docker-compose run --rm app sh -c "django-admin startapp [app_name]"
+docker-compose run --rm app sh -c "python manage.py startapp [app_name]"
 
 docker-compose run --rm app sh -c "python manage.py test"
 
